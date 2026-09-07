@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>自転車広告広場</title>
+  <meta name="description" content="街を走る自転車広告。気になる広告を選んで、お店・イベント・クーポン情報をチェックできます。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="grain"></div>
+
+  <header class="hero">
+    <div class="hero__inner">
+
+      <div class="eyebrow">
+        BICYCLE AD SQUARE / SHIZUOKA
+      </div>
+
+      <h1>
+        ようこそ！<br>
+        <span>自転車広告広場へ</span>
+      </h1>
+
+      <p class="lead">
+        街で見かけた広告はこちらから。<br>
+        気になる広告をタップしてください。
+      </p>
+
+      <a class="primary-cta" href="#ads">
+        広告を見る ↓
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 現在掲載中の広告 -->
+    <section class="section" id="ads">
+
+      <div class="section__head">
+
+        <span class="section__number">
+          01
+        </span>
+
+        <div>
+          <p class="kicker">
+            NOW ON THE BIKE
+          </p>
+
+          <h2>
+            現在掲載中の広告
+          </h2>
+        </div>
+
+      </div>
+
+      <!-- 今月のアクセス数 -->
+      <div
+        class="section-access"
+        aria-label="アクセス状況"
+      >
+
+        <div>
+          <span class="section-access__label">
+            MONTHLY PAGE ACCESS
+          </span>
+
+          <strong id="pageViews">
+            —
+          </strong>
+
+          <span>
+            アクセス
+          </span>
+        </div>
+
+        <div>
+          <span class="section-access__label">
+            MONTHLY AD CLICKS
+          </span>
+
+          <strong id="adClicks">
+            —
+          </strong>
+
+          <span>
+            広告クリック
+          </span>
+        </div>
+
+      </div>
+
+      <!-- 広告は ads-data.js から自動表示 -->
+      <div
+        class="ad-grid"
+        id="adGrid"
+      ></div>
+
+    </section>
+
+
+    <!-- 広告の仕組み -->
+    <section class="section how">
+
+      <div class="section__head">
+
+        <span class="section__number">
+          02
+        </span>
+
+        <div>
+          <p class="kicker">
+            HOW IT WORKS
+          </p>
+
+          <h2>
+            この広告について
+          </h2>
+        </div>
+
+      </div>
+
+      <div class="steps">
+
+        <div class="step">
+          <strong>1</strong>
+          <span>
+            街中を自転車で走行
+          </span>
+        </div>
+
+        <div class="step">
+          <strong>2</strong>
+          <span>
+            カゴの広告を見てもらう
+          </span>
+        </div>
+
+        <div class="step">
+          <strong>3</strong>
+          <span>
+            共通QRから広告一覧へ
+          </span>
+        </div>
+
+        <div class="step">
+          <strong>4</strong>
+          <span>
+            気になるお店・イベントへ移動
+          </span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- 広告募集 -->
+    <section
+      class="section advertise"
+      id="advertise"
+    >
+
+      <div class="advertise__box">
+
+        <p class="kicker">
+          ADVERTISE HERE
+        </p>
+
+        <h2>
+          この自転車に<br>
+          広告を出しませんか？
+        </h2>
+
+        <p>
+          街中を実際に走る自転車へ広告を掲載します。
+          広告からこのページへ誘導し、
+          お店・Instagram・クーポン・イベントページなどへ
+          つなげられます。
+        </p>
+
+        <div class="plan">
+
+          <span class="plan__label">
+            最初の3件限定
+          </span>
+
+          <div class="plan__price">
+
+            <strong>
+              2,000円
+            </strong>
+
+            <span>
+              / 2週間・1面
+            </span>
+
+          </div>
+
+          <ul>
+            <li>
+              自転車広告への掲載
+            </li>
+
+            <li>
+              共通QRからこの広告広場へ掲載
+            </li>
+
+            <li>
+              お店・SNS・クーポン等へのリンク
+            </li>
+
+            <li>
+              走行・アクセス実績を記録予定
+            </li>
+          </ul>
+
+        </div>
+
+        <a
+          class="secondary-cta"
+          id="gmailContact"
+          href="#"
+          target="_blank"
+          rel="noopener"
+        >
+          Gmailで広告掲載について問い合わせる →
+        </a>
+
+        <p class="small">
+          ※ Uber / Uber Eats とは無関係の個人広告企画です。
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div>
+      BICYCLE AD SQUARE
+    </div>
+
+    <div>
+      SHIZUOKA / MOVING AD SPACE
+    </div>
+
+  </footer>
+
+  <script src="site-config.js"></script>
+  <script src="ads-data.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
