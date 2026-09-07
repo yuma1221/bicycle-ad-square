@@ -29,25 +29,25 @@ window.AD_DATA = [
 
 
   {
-    id: "jam",
+    id: "CTC",
 
     category: "CLIMBING",
 
     status: "掲載中",
 
-    title: "クライミングJAM",
+    title: "CTC chalk",
 
     description:
-      "初めてでも大丈夫。初心者向け講習を受付中！",
+      "初めてでも大丈夫。初心者向けのチョークを販売中！",
 
     meta:
-      "静岡市内 / ボルダリング",
+      "テスト",
 
     buttonText:
       "Instagramを見る",
 
     url:
-      "https://www.instagram.com/"
+      "https://www.instagram.com/ctc_chalk.offcial.site/"
   },
 
 
